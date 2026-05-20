@@ -1,0 +1,13 @@
+[
+  "[warning] [UiBrokerRegistrar] InteractionBroker not available",
+  "[warning] [Meta Pixel] - Duplicate Pixel ID: 915880801933731.",
+  "[warning] Allow attribute will take precedence over 'allowfullscreen'.",
+  "[debug] common initialization",
+  "[info] Tue May 19 15:05:49 GMT-400 2026 com.brazen.shared.notificationsoundplayer.AbstractNotificationSoundPlayer\nINFO: Notification audio player initialized.",
+  "[info] Tue May 19 15:05:49 GMT-400 2026 com.brazen.gwt.bcfabchat.client.BrazenChatWidget\nINFO: Brazen chat widget initialized",
+  "[error] Tue May 19 15:05:49 GMT-400 2026 com.brazen.shared.client.presenter.BrowserStorageManager\nSEVERE: Cookies are not enabled in this browser. This might preclude the use of most Brazen Connect features!",
+  "[info] Tue May 19 15:05:49 GMT-400 2026 com.brazen.gwt.bcfabchat.client.mvp.ChatWidgetMainPresenter\nINFO: Brazen chat widget job mode initialized for job: 106796421",
+  "[info] Tue May 19 15:05:50 GMT-400 2026 com.brazen.gwt.bcfabchat.client.mvp.AbstractChatWidgetSharedPresenter\nINFO: Brazen engagement options for job with Brazen id 106796421 and code RQ219281\n\tHas assigned Recruiters: false\n\tAssociated Brazen Events: 0\n\tAssociated FAQs: 11\nCareer Site Assistant will be shown.",
+  "[warning] The resource https://www.gdit.com/fonts/VisueltPro-Thin.woff was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "[warning] The resource https://www.gdit.com/fonts/VisueltPro-Thin.woff was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+]

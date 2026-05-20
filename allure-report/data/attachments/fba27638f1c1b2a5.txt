@@ -1,0 +1,4 @@
+2026-05-19T17:19:28.682Z [info] Launching application
+2026-05-19T17:19:29.411Z [info] Entering email: zaliva2010@hotmail.com
+2026-05-19T17:19:32.045Z [info] Entering password
+2026-05-19T17:19:32.087Z [info] Clicking Sign In

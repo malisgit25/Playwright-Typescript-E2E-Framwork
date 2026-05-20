@@ -1,0 +1,667 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: LoginTest.spec.ts >> Enterprise Login Suite >> Login flow zaliva2010@hotmail.com
+- Location: tests\LoginTest.spec.ts:14:9
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator('//a[contains(@href,\'/careers/job\') and contains(@href,\'engineer\')]') to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - generic [ref=e5]:
+          - link "General Dynamics Information Technology - Click to return to the homepage" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img [ref=e8]
+          - menubar [ref=e12]:
+            - menuitem "Capabilities" [ref=e13]:
+              - menuitem "Capabilities" [ref=e14] [cursor=pointer]
+            - menuitem "Industries" [ref=e15]:
+              - menuitem "Industries" [ref=e16] [cursor=pointer]
+            - menuitem "Perspectives" [ref=e17]:
+              - menuitem "Perspectives" [ref=e18] [cursor=pointer]
+            - menuitem "Careers" [ref=e19]:
+              - menuitem "Careers" [ref=e20] [cursor=pointer]
+            - menuitem "About GDIT" [ref=e21]:
+              - menuitem "About GDIT" [ref=e22] [cursor=pointer]
+            - button "Search (Press enter to open search)" [ref=e23] [cursor=pointer]:
+              - img [ref=e24]
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - img
+            - img "GDIT employees" [ref=e32]
+          - generic [ref=e35]:
+            - paragraph [ref=e36]: Careers
+            - text: Opportunity Owned From working with technologies like AI, cyber and cloud to careers in intelligence and health, we offer endless opportunities to apply your expertise to create a safer, smarter world.
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - heading "Find your place." [level=3] [ref=e44]
+            - heading "What impact do you want to have on the world? Explore current jobs at GDIT." [level=4] [ref=e45]:
+              - paragraph [ref=e46]:
+                - text: What impact do you want to have on the world?
+                - text: Explore current jobs at GDIT.
+          - generic [ref=e48]:
+            - generic [ref=e50]:
+              - generic [ref=e51]: try searching “Cyber” or “Engineer”
+              - generic [ref=e52]:
+                - generic:
+                  - img
+                - textbox "try searching “Cyber” or “Engineer”" [ref=e53]
+                - button "Search" [ref=e54] [cursor=pointer]:
+                  - generic [ref=e55]: Search
+            - generic [ref=e56]:
+              - generic [ref=e57]:
+                - link "Join Talent Community |" [ref=e58] [cursor=pointer]:
+                  - /url: /careers/talent-community/
+                - link "View Application Status" [ref=e59] [cursor=pointer]:
+                  - /url: https://gdit.wd5.myworkdayjobs.com/en-US/External_Career_Site/login
+              - paragraph [ref=e61]:
+                - text: We are aware of job posting scams targeting candidates. Please visit our
+                - link "FAQs" [ref=e62] [cursor=pointer]:
+                  - /url: /careers/employment-application-faqs/
+                - text: for tips to keep yourself safe.
+              - link "Accessibility, Accommodations and E-Verify" [ref=e64] [cursor=pointer]:
+                - /url: /careers/accessibility-and-accommodations/
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - generic:
+              - generic:
+                - img
+          - generic [ref=e72]:
+            - heading "Apply your expertise to propel your career forward." [level=2] [ref=e74]:
+              - link "Apply your expertise to propel your career forward." [ref=e75] [cursor=pointer]:
+                - /url: /careers/areas-of-expertise/
+            - generic [ref=e76]:
+              - text: From working with technologies like AI, cyber and cloud to careers in intelligence and health, we offer endless opportunities to apply your expertise to create a safer, smarter world while building new skills to
+              - link "propel your career forward" [ref=e77] [cursor=pointer]:
+                - /url: /careers/grow-your-career/
+              - text: .
+              - button "Explore Areas of Expertise" [ref=e79] [cursor=pointer]
+        - generic [ref=e82]:
+          - heading "Our award winning culture." [level=2] [ref=e87]
+          - generic [ref=e90]:
+            - generic [ref=e92]:
+              - generic [ref=e95]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "v2"
+                  - generic: Glassdoor's Best Places to Work in Tech & AI
+              - generic [ref=e98]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "USA Today Top Workplaces 2025"
+                  - generic: USA Today Top Workplaces
+              - generic [ref=e101]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Fast Company Next Big Things in Tech 2025"
+                  - generic: Fast Company Next Big Things in Tech
+              - generic [ref=e104]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "The Washington Post Top Workplaces 2025 award"
+                  - generic: The Washington Post Top Workplaces
+              - generic [ref=e107]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Military Friendly Gold Employer - 2026"
+                  - generic: Military Friendly Employer
+              - generic [ref=e110]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                  - generic: Artificial Intelligence Excellence Leading AI Professionals
+              - generic [ref=e113]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Vault Top Ranked"
+                  - generic: Vault's 150 Best Internships
+              - generic [ref=e116]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Glassdoor's Best Places to Work"
+                  - generic: Glassdoor's Best Places to Work
+              - generic [ref=e119]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "St. Louis Top Workplace 2025"
+                  - generic: St. Louis Post-Dispatch Top Workplaces
+              - generic [ref=e122]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "USVM Top Veteran Friendly Employer 2024"
+                  - generic: U.S. Veterans Magazine Top Veteran-Friendly Employer
+              - generic [ref=e125]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Washington Post Top Work Places 2023"
+                  - generic: The Washington Post Top Workplaces
+              - generic [ref=e128]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                  - generic: Fast Company Best Workplaces for Innovators
+              - generic [ref=e131]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Training Magazine Training APEX award"
+                  - generic: Training APEX Awards
+              - generic [ref=e134]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Military Friendly Spouse Employer 2026"
+                  - generic: Military Friendly Spouse Employer
+              - generic [ref=e137]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "v2"
+                  - generic: Glassdoor's Best Places to Work in Tech & AI
+              - generic [ref=e140]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "USA Today Top Workplaces 2025"
+                  - generic: USA Today Top Workplaces
+              - generic [ref=e143]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Fast Company Next Big Things in Tech 2025"
+                  - generic: Fast Company Next Big Things in Tech
+              - generic [ref=e146]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "The Washington Post Top Workplaces 2025 award"
+                  - generic: The Washington Post Top Workplaces
+              - generic [ref=e149]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Military Friendly Gold Employer - 2026"
+                  - generic: Military Friendly Employer
+              - generic [ref=e152]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                  - generic: Artificial Intelligence Excellence Leading AI Professionals
+              - generic [ref=e155]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Vault Top Ranked"
+                  - generic: Vault's 150 Best Internships
+              - generic [ref=e158]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Glassdoor's Best Places to Work"
+                  - generic: Glassdoor's Best Places to Work
+              - generic [ref=e161]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "St. Louis Top Workplace 2025"
+                  - generic: St. Louis Post-Dispatch Top Workplaces
+              - generic [ref=e164]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "USVM Top Veteran Friendly Employer 2024"
+                  - generic: U.S. Veterans Magazine Top Veteran-Friendly Employer
+              - generic [ref=e167]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Washington Post Top Work Places 2023"
+                  - generic: The Washington Post Top Workplaces
+              - generic [ref=e170]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                  - generic: Fast Company Best Workplaces for Innovators
+              - generic [ref=e173]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Training Magazine Training APEX award"
+                  - generic: Training APEX Awards
+              - generic [ref=e176]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Military Friendly Spouse Employer 2026"
+                  - generic: Military Friendly Spouse Employer
+            - generic [ref=e177]:
+              - generic [ref=e180]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "v2"
+                  - generic: Glassdoor's Best Places to Work in Tech & AI
+              - generic [ref=e183]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "USA Today Top Workplaces 2025"
+                  - generic: USA Today Top Workplaces
+              - generic [ref=e186]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Fast Company Next Big Things in Tech 2025"
+                  - generic: Fast Company Next Big Things in Tech
+              - generic [ref=e189]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "The Washington Post Top Workplaces 2025 award"
+                  - generic: The Washington Post Top Workplaces
+              - generic [ref=e192]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Military Friendly Gold Employer - 2026"
+                  - generic: Military Friendly Employer
+              - generic [ref=e195]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                  - generic: Artificial Intelligence Excellence Leading AI Professionals
+              - generic [ref=e198]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Vault Top Ranked"
+                  - generic: Vault's 150 Best Internships
+              - generic [ref=e201]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Glassdoor's Best Places to Work"
+                  - generic: Glassdoor's Best Places to Work
+              - generic [ref=e204]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "St. Louis Top Workplace 2025"
+                  - generic: St. Louis Post-Dispatch Top Workplaces
+              - generic [ref=e207]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "USVM Top Veteran Friendly Employer 2024"
+                  - generic: U.S. Veterans Magazine Top Veteran-Friendly Employer
+              - generic [ref=e210]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Washington Post Top Work Places 2023"
+                  - generic: The Washington Post Top Workplaces
+              - generic [ref=e213]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                  - generic: Fast Company Best Workplaces for Innovators
+              - generic [ref=e216]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Training Magazine Training APEX award"
+                  - generic: Training APEX Awards
+              - generic [ref=e219]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Military Friendly Spouse Employer 2026"
+                  - generic: Military Friendly Spouse Employer
+              - generic [ref=e222]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "v2"
+                  - generic: Glassdoor's Best Places to Work in Tech & AI
+              - generic [ref=e225]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "USA Today Top Workplaces 2025"
+                  - generic: USA Today Top Workplaces
+              - generic [ref=e228]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Fast Company Next Big Things in Tech 2025"
+                  - generic: Fast Company Next Big Things in Tech
+              - generic [ref=e231]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "The Washington Post Top Workplaces 2025 award"
+                  - generic: The Washington Post Top Workplaces
+              - generic [ref=e234]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Military Friendly Gold Employer - 2026"
+                  - generic: Military Friendly Employer
+              - generic [ref=e237]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                  - generic: Artificial Intelligence Excellence Leading AI Professionals
+              - generic [ref=e240]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Vault Top Ranked"
+                  - generic: Vault's 150 Best Internships
+              - generic [ref=e243]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Glassdoor's Best Places to Work"
+                  - generic: Glassdoor's Best Places to Work
+              - generic [ref=e246]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "St. Louis Top Workplace 2025"
+                  - generic: St. Louis Post-Dispatch Top Workplaces
+              - generic [ref=e249]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "USVM Top Veteran Friendly Employer 2024"
+                  - generic: U.S. Veterans Magazine Top Veteran-Friendly Employer
+              - generic [ref=e252]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Washington Post Top Work Places 2023"
+                  - generic: The Washington Post Top Workplaces
+              - generic [ref=e255]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                  - generic: Fast Company Best Workplaces for Innovators
+              - generic [ref=e258]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Training Magazine Training APEX award"
+                  - generic: Training APEX Awards
+              - generic [ref=e261]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - img "Military Friendly Spouse Employer 2026"
+                  - generic: Military Friendly Spouse Employer
+        - generic [ref=e267]:
+          - generic [ref=e271]:
+            - heading "Life at GDIT" [level=3] [ref=e272]
+            - text: Here we have a sense of ownership in our delivery, in our work, and in our career. We lead with integrity and compassion, get work done by collaborating and connecting with each other.
+            - button "Our Culture" [ref=e274] [cursor=pointer]
+          - generic [ref=e276]:
+            - generic [ref=e277] [cursor=pointer]:
+              - generic [ref=e278]:
+                - img
+              - generic [ref=e279]:
+                - generic:
+                  - heading "Your place to make a personal impact." [level=3]
+                  - generic: The work we do touches many. But what's more, is the impact the work has on us as individuals. We take pride in our achievements, big and small.
+            - generic [ref=e280] [cursor=pointer]:
+              - generic [ref=e281]:
+                - img
+                - img "GDIT employees cheering after Dulles Plane Pull" [ref=e282]
+              - generic [ref=e283]:
+                - generic:
+                  - heading "Work with meaning and purpose." [level=3]
+                  - generic: Whether it's supporting the safety and security of our nation, improving the health of our citizens or protecting the warfighter, you make a difference every day.
+            - generic [ref=e284] [cursor=pointer]:
+              - generic [ref=e285]:
+                - img
+                - img "GDIT employees cheering at Women + Technology event" [ref=e286]
+              - generic [ref=e287]:
+                - generic:
+                  - heading "People-powered culture." [level=3]
+                  - generic: From work-life flexibility to building connection and recognizing great work, we take care of our people. Every decision we make has people at its center.
+            - generic [ref=e288] [cursor=pointer]:
+              - generic [ref=e289]:
+                - img
+                - img "\"\"" [ref=e290]
+              - generic [ref=e291]:
+                - generic:
+                  - heading "Own your career." [level=3]
+                  - generic: We grow and develop with the support of our colleagues and leaders. Our people grow their careers with GDIT and can go virtually anywhere.
+        - generic [ref=e292]:
+          - generic [ref=e293]:
+            - generic [ref=e295]:
+              - heading "Featured Projects" [level=2] [ref=e296]
+              - generic [ref=e297]: Explore career opportunities on exciting projects we’re hiring for right now.
+            - button "Explore More Opportunities" [ref=e300] [cursor=pointer]
+          - generic [ref=e304]:
+            - generic [ref=e306]:
+              - generic [ref=e308]:
+                - img
+                - img "soldiers walking towards aircraft" [ref=e309]
+              - heading "Delivering intelligence to ensure critical national security mission success." [level=3] [ref=e310]
+              - button "Explore Opportunities" [ref=e312] [cursor=pointer]
+            - generic [ref=e314]:
+              - generic [ref=e316]:
+                - img
+                - img "Nola" [ref=e317]
+              - heading "Propel your career and our nation forward." [level=3] [ref=e318]
+              - button "Explore Opportunities" [ref=e320] [cursor=pointer]
+            - generic [ref=e322]:
+              - generic [ref=e324]:
+                - img
+                - img "GDIT employees" [ref=e325]
+              - heading "Come back to GDIT. Your next chapter starts here." [level=3] [ref=e326]
+              - button "Explore Opportunities" [ref=e328] [cursor=pointer]
+        - generic [ref=e333]:
+          - generic [ref=e334]:
+            - generic:
+              - generic:
+                - img
+          - generic [ref=e336]:
+            - heading "No matter where you are in your career." [level=2] [ref=e338]
+            - generic [ref=e339]:
+              - text: Our people support and secure some of the most complex government, defense and intelligence projects across the country. Whether you're
+              - link "early in your career" [ref=e340] [cursor=pointer]:
+                - /url: /careers/featured-career-stages/early-talent-and-internships/
+              - text: ", a"
+              - link "military veteran" [ref=e341] [cursor=pointer]:
+                - /url: /careers/featured-career-stages/military-veterans/
+              - text: ", a"
+              - link "cleared professional" [ref=e342] [cursor=pointer]:
+                - /url: /careers/featured-career-stages/cleared-professionals/
+              - text: or a
+              - link "GDIT alumni" [ref=e343] [cursor=pointer]:
+                - /url: /careers/featured-career-stages/alumni/
+              - text: considering re-joining our team, we value your unique perspective and experience.
+        - generic [ref=e349]:
+          - generic [ref=e351]:
+            - heading "Stay connected with GDIT!" [level=2] [ref=e352]
+            - generic [ref=e353]: Join our Talent Community to stay up to date on our career opportunities and events.
+          - button "Talent Community" [ref=e356] [cursor=pointer]
+        - generic [ref=e361]:
+          - generic [ref=e363]:
+            - heading "Frequently Asked Questions" [level=3] [ref=e364]
+            - generic [ref=e366]: Find answers to your questions about careers at GDIT and our application process.
+            - button "Explore FAQs" [ref=e368] [cursor=pointer]
+          - generic [ref=e370]:
+            - heading "Benefits" [level=3] [ref=e371]
+            - generic [ref=e373]: Our comprehensive benefits are designed around what matters most to our people.
+            - button "Explore Benefits" [ref=e375] [cursor=pointer]
+      - contentinfo [ref=e376]:
+        - generic [ref=e380]:
+          - generic [ref=e381]:
+            - link "General Dynamics Information Technology - Click to return to the homepage" [ref=e382] [cursor=pointer]:
+              - /url: /
+              - img [ref=e383]
+            - paragraph [ref=e385]:
+              - text: © 2026 General Dynamics Information Technology, Inc., a
+              - link "General Dynamics" [ref=e386] [cursor=pointer]:
+                - /url: https://www.gd.com/
+              - text: Company.
+          - menu [ref=e388]:
+            - menuitem "Capabilities" [ref=e389] [cursor=pointer]
+            - menuitem "Industries" [ref=e390] [cursor=pointer]
+            - menuitem "Perspectives" [ref=e391] [cursor=pointer]
+          - menu [ref=e393]:
+            - menuitem "Careers" [ref=e394] [cursor=pointer]
+            - menuitem "About GDIT" [ref=e395] [cursor=pointer]
+            - menuitem "Contact Us" [ref=e396] [cursor=pointer]
+          - contentinfo [ref=e397]:
+            - generic [ref=e398]:
+              - link "Visit GDIT's Facebook" [ref=e399] [cursor=pointer]:
+                - /url: https://www.facebook.com/GeneralDynamicsIT/
+              - link "Visit GDIT's Instagram" [ref=e401] [cursor=pointer]:
+                - /url: https://www.instagram.com/generaldynamicsit/
+              - link "Visit GDIT's LinkedIn" [ref=e405] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/general-dynamics-information-technology
+              - link "Visit GDIT's Twitter" [ref=e407] [cursor=pointer]:
+                - /url: https://twitter.com/GDIT
+                - img [ref=e408]
+              - link "Visit GDIT's YouTube" [ref=e410] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCaB-uSlpjnUQzNzXajf2L_w
+              - link "Visit GDIT's Glassdoor" [ref=e412] [cursor=pointer]:
+                - /url: https://www.glassdoor.com/Overview/Working-at-General-Dynamics-Information-Technology-EI_IE18661.11,50.htm
+                - img [ref=e413]
+            - paragraph [ref=e417]: Equal Opportunity Employer / Individuals with Disabilities / Protected Veterans
+        - menu [ref=e424]:
+          - menuitem "Privacy Policy" [ref=e425] [cursor=pointer]
+          - menuitem "Legal Terms" [ref=e426] [cursor=pointer]
+          - menuitem "CA Consumer Privacy" [ref=e427] [cursor=pointer]
+          - menuitem "EU-US Data Privacy Framework Privacy Statement" [ref=e428] [cursor=pointer]
+          - menuitem "EU General Data Protection Regulation" [ref=e429] [cursor=pointer]
+          - menuitem "Accessibility, Accommodations and E-Verify" [ref=e430] [cursor=pointer]
+          - menuitem "Site Map" [ref=e431] [cursor=pointer]
+      - generic [ref=e432]:
+        - paragraph [ref=e433]:
+          - text: We use cookies to enhance your website experience. By continuing to visit this site, you agree to our use of cookies.
+          - link "Learn More." [ref=e434] [cursor=pointer]:
+            - /url: https://www.gdit.com/privacy-policy/
+        - button "Accept" [ref=e435] [cursor=pointer]
+  - alert [ref=e436]
+```
+
+# Test source
+
+```ts
+  1  | import { Locator, Page } from '@playwright/test';
+  2  | 
+  3  | export class BasePage {
+  4  | 
+  5  |   constructor(protected page: Page) {}
+  6  | 
+  7  |   async click(locator: Locator) {
+  8  |     await locator.click();
+  9  |   }
+  10 | 
+  11 |   async fill(locator: Locator, value: string) {
+  12 |     await locator.fill(value);
+  13 |   }
+  14 | 
+  15 |   async type(locator: Locator, value: string) {
+  16 |     await locator.pressSequentially(value);
+  17 |   }
+  18 | 
+  19 |   async waitForVisible(locator: Locator) {
+> 20 |     await locator.waitFor({ state: 'visible' });
+     |                   ^ TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+  21 |   }
+  22 | 
+  23 |   async getTitle() {
+  24 |     return await this.page.title();
+  25 |   }
+  26 | }
+```

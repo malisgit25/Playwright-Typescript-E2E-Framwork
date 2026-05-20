@@ -1,0 +1,169 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: LoginTest.spec.ts >> Enterprise Login Suite >> Login zaliva2010@hotmail.com
+- Location: tests\LoginTest.spec.ts:14:9
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator('#name--legalName--firstName')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - link "Skip to main content" [ref=e5] [cursor=pointer]:
+    - /url: ""
+  - banner [ref=e8]:
+    - generic [ref=e10]:
+      - link "careers home" [ref=e13] [cursor=pointer]:
+        - /url: https://www.gdit.com/careers/
+        - img "careers home" [ref=e14]
+      - generic [ref=e15]:
+        - heading [level=1]
+      - generic [ref=e17]:
+        - button "Sign In" [ref=e19] [cursor=pointer]:
+          - generic [ref=e24]: Sign In
+        - navigation [ref=e25]:
+          - button "Search and Apply" [ref=e26] [cursor=pointer]
+          - button "Join our Talent Community!" [ref=e27] [cursor=pointer]
+  - main [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - link "Back to Job Posting" [ref=e34] [cursor=pointer]:
+          - generic [ref=e38]: Back to Job Posting
+        - heading "Test Engineer Senior (Manual)" [level=2] [ref=e39]
+      - generic "Application Progress" [ref=e40]:
+        - list [ref=e41]:
+          - listitem [ref=e42]:
+            - generic: current step 1 of 7
+            - generic [ref=e48]: Create Account/Sign In
+          - listitem [ref=e49]:
+            - generic: step 2 of 7
+            - generic [ref=e55]: My Information
+          - listitem [ref=e56]:
+            - generic: step 3 of 7
+            - generic [ref=e62]: My Experience
+          - listitem [ref=e63]:
+            - generic: step 4 of 7
+            - generic [ref=e69]: Application Questions
+          - listitem [ref=e70]:
+            - generic: step 5 of 7
+            - generic [ref=e76]: Voluntary Disclosures
+          - listitem [ref=e77]:
+            - generic: step 6 of 7
+            - generic [ref=e83]: Self Identify
+          - listitem [ref=e84]:
+            - generic: step 7 of 7
+            - generic [ref=e90]: Review
+      - generic [ref=e93]:
+        - generic [ref=e96]:
+          - heading "Create Account" [active] [level=3] [ref=e97]
+          - generic [ref=e99]:
+            - heading "*ATTENTION CURRENT GDIT EMPLOYEES*" [level=1] [ref=e100]:
+              - generic [ref=e102]: "*ATTENTION CURRENT GDIT EMPLOYEES*"
+            - heading "To apply to this job, you must apply via the Find GDIT Jobs app in Workday." [level=1] [ref=e103]:
+              - generic [ref=e104]: To apply to this job, you must apply via the Find GDIT Jobs app in Workday.
+          - generic [ref=e107]:
+            - paragraph [ref=e108]: "Password Requirements:"
+            - list [ref=e109]:
+              - listitem [ref=e110]: An alphabetic character
+              - listitem [ref=e111]: An uppercase character
+              - listitem [ref=e112]: A special character
+              - listitem [ref=e113]: A numeric character
+              - listitem [ref=e114]: A minimum of 8 characters
+              - listitem [ref=e115]: A lowercase character
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - generic [ref=e119]: Email Address*
+              - textbox "Email Address" [ref=e122]
+            - generic [ref=e124]:
+              - generic [ref=e126]: Password*
+              - textbox "Password" [ref=e129]
+            - generic [ref=e130]:
+              - generic [ref=e132]: Verify New Password*
+              - textbox "Verify New Password" [ref=e135]
+            - generic [ref=e140]:
+              - paragraph [ref=e141]: Accepting the Terms of Service
+              - paragraph [ref=e142]: In order to apply you must agree to General Dynamics Information Technology retaining your name and e-mail information for sole purposes of employment consideration.
+            - generic [ref=e147]:
+              - checkbox "Yes, I have read and consent to the terms of service listed above." [ref=e149] [cursor=pointer]
+              - generic [ref=e150] [cursor=pointer]: Yes, I have read and consent to the terms of service listed above.
+            - generic [ref=e155]:
+              - button "Create Account" [ref=e156] [cursor=pointer]
+              - button [ref=e157] [cursor=pointer]: Create Account
+          - generic [ref=e158]:
+            - text: Already have an account?
+            - button "Sign In" [ref=e159] [cursor=pointer]
+          - button "Forgot your password?" [ref=e161] [cursor=pointer]
+        - generic:
+          - generic:
+            - generic [ref=e162]: Enter website. This input is for robots only, do not enter if you're human.
+            - textbox "Enter website. This input is for robots only, do not enter if you're human." [ref=e163]
+  - generic [ref=e164]:
+    - heading "Follow Us" [level=4] [ref=e165]
+    - list [ref=e166]:
+      - listitem [ref=e167] [cursor=pointer]:
+        - link "YouTube" [ref=e168]:
+          - /url: https://www.youtube.com/channel/UCaB-uSlpjnUQzNzXajf2L_w
+      - listitem [ref=e174] [cursor=pointer]:
+        - link "X" [ref=e175]:
+          - /url: https://twitter.com/GDIT
+      - listitem [ref=e179] [cursor=pointer]:
+        - link "Facebook" [ref=e180]:
+          - /url: https://www.facebook.com/GeneralDynamicsIT/
+      - listitem [ref=e184] [cursor=pointer]:
+        - link "LinkedIn" [ref=e185]:
+          - /url: https://www.linkedin.com/company/general-dynamics-information-technology/
+    - link "GDIT Privacy Notice and California Privacy Notice" [ref=e190] [cursor=pointer]:
+      - /url: https://www.gdit.com/privacy-policy/notices/
+    - generic [ref=e191]:
+      - img [ref=e195]
+      - generic [ref=e215]: © 2026 Workday, Inc. All rights reserved.
+```
+
+# Test source
+
+```ts
+  1  | import { Page, Locator } from '@playwright/test';
+  2  | 
+  3  | export class BasePage {
+  4  |   constructor(protected page: Page) {}
+  5  | 
+  6  |   get(locator: string): Locator {
+  7  |     return this.page.locator(locator);
+  8  |   }
+  9  | 
+  10 |   async waitForVisible(locator: Locator) {
+  11 |     await locator.waitFor({ state: 'visible' });
+  12 |   }
+  13 | 
+  14 |  async click(locator: Locator) {
+  15 |   await locator.first().scrollIntoViewIfNeeded();
+  16 |   await locator.first().waitFor({ state: 'visible' });
+  17 |   await locator.first().click();
+  18 | }
+  19 | 
+  20 |  async fill(locator: Locator, value: string) {
+> 21 |   await locator.waitFor({ state: 'attached' });
+     |                 ^ TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+  22 |   await locator.scrollIntoViewIfNeeded();
+  23 |   await locator.click(); // force focus
+  24 |   await locator.fill(value);
+  25 | }
+  26 | 
+  27 |   async getTitle() {
+  28 |     return this.page.title();
+  29 |   }
+  30 | }
+```

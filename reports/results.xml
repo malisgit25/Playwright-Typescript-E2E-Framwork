@@ -1,0 +1,304 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="2" time="103.58530099999999">
+<testsuite name="LoginTest.spec.ts" timestamp="2026-05-19T20:04:24.636Z" hostname="chrome" tests="1" failures="0" skipped="0" time="90.126" errors="1">
+<testcase name="Enterprise Login Suite › Login zaliva2010@hotmail.com" classname="LoginTest.spec.ts" time="90.126">
+<system-out>
+<![CDATA[2026-05-19T20:04:25.846Z [info] Launching application
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome\video.webm]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome\error-context.md]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome\trace.zip]]
+2026-05-19T20:04:55.667Z [info] Launching application
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry1\trace.zip]]
+2026-05-19T20:05:29.990Z [info] Launching application
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry2\video.webm]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry2\error-context.md]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry2\trace.zip]]
+]]>
+</system-out>
+<error message="locator.waitFor: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chrome] › LoginTest.spec.ts:14:9 › Enterprise Login Suite › Login zaliva2010@hotmail.com ────────
+
+    TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#name--legalName--firstName')
+
+
+       at ..\pages\BasePage.ts:21
+
+      19 |
+      20 |  async fill(locator: Locator, value: string) {
+    > 21 |   await locator.waitFor({ state: 'attached' });
+         |                 ^
+      22 |   await locator.scrollIntoViewIfNeeded();
+      23 |   await locator.click(); // force focus
+      24 |   await locator.fill(value);
+        at MyInformationPage.fill (C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\pages\BasePage.ts:21:17)
+        at MyInformationPage.enterFirstName (C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\pages\MyInformationPage.ts:21:16)
+        at C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\tests\LoginTest.spec.ts:32:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#name--legalName--firstName')
+
+
+       at ..\pages\BasePage.ts:21
+
+      19 |
+      20 |  async fill(locator: Locator, value: string) {
+    > 21 |   await locator.waitFor({ state: 'attached' });
+         |                 ^
+      22 |   await locator.scrollIntoViewIfNeeded();
+      23 |   await locator.click(); // force focus
+      24 |   await locator.fill(value);
+        at MyInformationPage.fill (C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\pages\BasePage.ts:21:17)
+        at MyInformationPage.enterFirstName (C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\pages\MyInformationPage.ts:21:16)
+        at C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\tests\LoginTest.spec.ts:32:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry1\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#name--legalName--firstName')
+
+
+       at ..\pages\BasePage.ts:21
+
+      19 |
+      20 |  async fill(locator: Locator, value: string) {
+    > 21 |   await locator.waitFor({ state: 'attached' });
+         |                 ^
+      22 |   await locator.scrollIntoViewIfNeeded();
+      23 |   await locator.click(); // force focus
+      24 |   await locator.fill(value);
+        at MyInformationPage.fill (C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\pages\BasePage.ts:21:17)
+        at MyInformationPage.enterFirstName (C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\pages\MyInformationPage.ts:21:16)
+        at C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\tests\LoginTest.spec.ts:32:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry2\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry2\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-chrome-retry2\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="LoginTest.spec.ts" timestamp="2026-05-19T20:04:24.636Z" hostname="edge" tests="1" failures="0" skipped="0" time="94.925" errors="1">
+<testcase name="Enterprise Login Suite › Login zaliva2010@hotmail.com" classname="LoginTest.spec.ts" time="94.925">
+<system-out>
+<![CDATA[2026-05-19T20:04:25.737Z [info] Launching application
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge\video.webm]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge\error-context.md]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge\trace.zip]]
+2026-05-19T20:04:59.532Z [info] Launching application
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry1\trace.zip]]
+2026-05-19T20:05:44.667Z [info] Launching application
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry2\video.webm]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry2\error-context.md]]
+
+[[ATTACHMENT|..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry2\trace.zip]]
+]]>
+</system-out>
+<error message="locator.waitFor: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [edge] › LoginTest.spec.ts:14:9 › Enterprise Login Suite › Login zaliva2010@hotmail.com ──────────
+
+    TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#name--legalName--firstName')
+
+
+       at ..\pages\BasePage.ts:21
+
+      19 |
+      20 |  async fill(locator: Locator, value: string) {
+    > 21 |   await locator.waitFor({ state: 'attached' });
+         |                 ^
+      22 |   await locator.scrollIntoViewIfNeeded();
+      23 |   await locator.click(); // force focus
+      24 |   await locator.fill(value);
+        at MyInformationPage.fill (C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\pages\BasePage.ts:21:17)
+        at MyInformationPage.enterFirstName (C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\pages\MyInformationPage.ts:21:16)
+        at C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\tests\LoginTest.spec.ts:32:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#name--legalName--firstName')
+
+
+       at ..\pages\BasePage.ts:21
+
+      19 |
+      20 |  async fill(locator: Locator, value: string) {
+    > 21 |   await locator.waitFor({ state: 'attached' });
+         |                 ^
+      22 |   await locator.scrollIntoViewIfNeeded();
+      23 |   await locator.click(); // force focus
+      24 |   await locator.fill(value);
+        at MyInformationPage.fill (C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\pages\BasePage.ts:21:17)
+        at MyInformationPage.enterFirstName (C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\pages\MyInformationPage.ts:21:16)
+        at C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\tests\LoginTest.spec.ts:32:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry1\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('a[href*=\'/careers/job/\']').first().first()
+        - waiting for" https://www.gdit.com/careers/?search=Test+Engineer&submit=" navigation to finish...
+        - navigated to "https://www.gdit.com/careers/?search=Test+Engineer&submit="
+
+
+       at ..\pages\BasePage.ts:15
+
+      13 |
+      14 |  async click(locator: Locator) {
+    > 15 |   await locator.first().scrollIntoViewIfNeeded();
+         |                         ^
+      16 |   await locator.first().waitFor({ state: 'visible' });
+      17 |   await locator.first().click();
+      18 | }
+        at SearchAndApplyPage.click (C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\pages\BasePage.ts:15:25)
+        at SearchAndApplyPage.clickOnJobTitle (C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\pages\SearchAndApplyPage.ts:20:16)
+        at C:\Users\zaliv\OneDrive\Desktop\Playwright\Playwright -Typescript - Framework\tests\LoginTest.spec.ts:29:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry2\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry2\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\LoginTest-Enterprise-Login-e87e6-ogin-zaliva2010-hotmail-com-edge-retry2\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+</testsuites>

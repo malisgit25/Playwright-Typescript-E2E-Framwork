@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+
+    "target": "ES2022",
+
+    "module": "commonjs",
+
+    "lib": ["ES2022", "DOM"],
+
+    "types": ["node", "@playwright/test"],
+
+    "strict": true,
+
+    "resolveJsonModule": true,
+
+    "esModuleInterop": true,
+
+    "skipLibCheck": true,
+
+    "forceConsistentCasingInFileNames": true
+  },
+
+  "include": [
+    "tests",
+    "pages",
+    "fixtures",
+    "utils",
+    "**/*.ts"
+  ],
+
+  "exclude": [
+    "node_modules"
+  ]
+}

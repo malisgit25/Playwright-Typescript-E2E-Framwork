@@ -1,0 +1,9 @@
+[
+  "[warning] [UiBrokerRegistrar] InteractionBroker not available",
+  "[warning] [Meta Pixel] - Duplicate Pixel ID: 915880801933731.",
+  "[warning] Allow attribute will take precedence over 'allowfullscreen'.",
+  "[debug] Tue May 19 2026 15:43:06 GMT-0400 (Eastern Daylight Time) Atmosphere: beforeunload event",
+  "[debug] common initialization",
+  "[info] Tue May 19 15:43:06 GMT-400 2026 com.brazen.shared.notificationsoundplayer.AbstractNotificationSoundPlayer\nINFO: Notification audio player initialized.",
+  "[info] Tue May 19 15:43:06 GMT-400 2026 com.brazen.gwt.bcfabchat.client.BrazenChatWidget\nINFO: Brazen chat widget initialized"
+]
